@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercado Tancoltze</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">🌱 Tancoltze</h2>
+
+        <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Sobre el Proyecto</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="overlay">
+        <h3 class="fade-in">Alwa' ultaláb</h3>
+        <h1 class="fade-in delay1">K'ubak xi in Ts'ejkal an T'ojláb</h1>
+        <p class="fade-in delay2">Tancoltze, Tancanhuitz <br> <br>Tradición, productos y talento local</p>
+
+        <div class="buttons fade-in delay3">
+            <a href="#nosotros" class="btn">Sobre el Proyecto</a>
+            <a href="#historia" class="btn btn-secondary">Historia de la comunidad</a>
+        </div>
+    </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="seccion-flex">
+
+    <div class="imagen">
+        <img src="..//Tancoltze/image/logo.png" alt="">
+    </div>
+
+    <div class="texto fade-in">
+        <h2>Sobre el Proyecto</h2>
+        <p>
+            El presente proyecto se desarrolla como parte de las actividades de vinculación 
+            comunitaria promovidas por la UICSLP, con el objetivo de aplicar conocimientos 
+            en beneficio de la sociedad. En este contexto, se identificó la necesidad de fortalecer 
+            la promoción de los pequeños emprendedores de la comunidad de Tancoltze, en el 
+            municipio de Tancanhuitz.
+            Para ello, se propone el desarrollo de una página web que funcione como un espacio 
+            digital donde se muestren los productos locales, junto con los medios de contacto de 
+            cada emprendedor, facilitando la comunicación con posibles clientes. Asimismo, la 
+            plataforma incluirá información sobre la comunidad, como su historia, ubicación y 
+            canales de contacto generales.
+            Con esta iniciativa se busca impulsar la visibilidad de los negocios locales y 
+            contribuir al desarrollo económico y digital de la comunidad.
+        </p>
+    </div>
+
+</section>
+
+<!-- HISTORIA -->
+<section id="historia" class="seccion-flex reverse">
+    <div class="imagen historia-carrusel">
+    <img src="../Tancoltze/image/perfil.png" class="slide active" alt="">
+    <img src="../Tancoltze/image/tan1.webp" class="slide" alt="">
+    <img src="../Tancoltze/image/tan2.webp" class="slide" alt="">
+    <img src="../Tancoltze/image/tan3.webp" class="slide" alt="">
+    <img src="../Tancoltze/image/tan4.webp" class="slide" alt="">
+    <img src="../Tancoltze/image/tan5.webp" class="slide" alt="">
+    <img src="../Tancoltze/image/tan6.webp" class="slide" alt="">
+    <img src="../Tancoltze/image/tan7.webp" class="slide" alt="">
+</div>
+
+    <div class="texto fade-in">
+        <h2>Historia de la Comunidad</h2>
+        <p>
+            Tancoltze es una comunidad con gran riqueza cultural, tradiciones y talento local.
+            Sus habitantes han desarrollado diversas actividades productivas que forman parte
+            de su identidad y economía. <br>La comunidad de Tancoltze recibe su nombre de la combinación
+            de tres palabras "Tan" hace referencia al lugar, "K'ol" que representa al glugluteo del guajolote, y 
+            "ts'én", que hace referencia al cerro. 
+            En tiempos antiguos, habia muchos guajolotes que bajaban de la sierra por esta razón, la comunidad fue llamada Tancoltze.
+            En años pasados, la comunidad contaba con gran mayor cantidad de habitantes y una vida comunitaria mas activa. Sin embargo
+            debido a un conflicto o guerra que afecto a la comunidad, muchas familias se vieron obligadas a abandonar sus hogares, lo 
+            que provocó una disminucion significativa de la población.
+            Además, existen relatos que mencionan la presencia de algunos riquezas, en la comunidad como objetos de valor y, en ciertos
+            casos, oro. Sin embargo, estas pertenencias no eran de todos los habitantes, si no unicamente de algunas familias. Ante la 
+            llegada del conflicto optaron por enterrar sus bienes bajo la tierra con el fin de protegerlos y evitar que fueran 
+            encontrados o robados. De esta manera, parte de la historia y los bienes de la comunidad quedaron resguardados en el territorio.
+            
+             <br>La historia de Tancoltze refleja la identidad, la cultura y la transformación de una comunidad con profundas raices. A pesar
+            de los cambios a lo largo del tiempo, su esencia permanece viva en sus tradiciones y en la memoria de sus habitantes. 
+            Esta historia refleja la relación de nuestra gente con la naturaleza y la riqueza cultural de nuestra región.
+        </p>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" class="productos">
+    <h2 class="titulo-seccion">Catálogo de Productos</h2>
+    
+    <input type="search" id="buscador" placeholder="Buscar productos...">
+
+    
+
+    <!-- CATEGORÍAS -->
+    <div class="categorias">
+        <div class="categoria" onclick="filtrar('comida')">🍔 Comida</div>
+        <div class="categoria" onclick="filtrar('postres')">🍰 Postres</div>
+        <div class="categoria" onclick="filtrar('ferreteria')">🛠️ Ferreteria</div>
+        <div class="categoria" onclick="filtrar('artesanias')">🧶 Artesanías</div>
+        <div class="categoria" onclick="filtrar('agricultura')">🌽 Agrícultura</div>
+        <div class="categoria" onclick="filtrar('abarrotes')">🏪 Abarrotes</div>
+        <div class="categoria" onclick="filtrar('servicios')">👨🏻‍🔧 Servicios</div>
+        <div class="categoria active" onclick="filtrar('todos')">🔄 Todos</div>
+    </div>
+
+    <p id="sin-resultados" style="display: none;">
+    No se encontraron productos 😕
+    </p>
+
+
+    <div class="grid">
+
+    <!-- COMIDA -->
+    <div class="card comida" onclick="abrirModal('Tacos Sandy', 'Ofrecemos tacos de bistec, campechanos, de chorizo, gringas, choriquezo, quesadillas y tortas', 
+    'Jueves - domingo', '4:00pm - 10:00pm', 'Zona de la curva, Pileta vieja, Ojox Tancoltze', 
+    '482 108 8358 - Armando Martínez Cruz', ['../Tancoltze/image/sandy0.png','../Tancoltze/image/sandy1.png', '../Tancoltze/image/sandy2.png', '../Tancoltze/image/sandy3.png'], 'https://wa.me/qr/K6OPOOLWMGEEJ1')">
+        <img src="../Tancoltze/image/sandy.png">
+        <h3>Tacos Sandy</h3>
+    </div>
+
+    <div class="card comida" onclick="abrirModal('Tacos Los Tios', 
+    'Ofrecemos tacos, gringas, tortas, quesadillas, choriquezo, entre otras cosas.', 
+    'Todos los días', '5:00pm - 11:00pm', 'Calle Hidalgo, zona centro de Tancanhuitz, frente a la casa ganadera', 
+    '482 100 5545', ['../Tancoltze/image/tacos1.png','../Tancoltze/image/tacos2.png'], 'https://wa.me/qr/K6OPOOLWMGEEJ1')">
+        <img src="../Tancoltze/image/tacos.png">
+        <h3>Tacos "Los Tios"</h3>
+    </div>
+
+    <div class="card comida" onclick="abrirModal('Enchiladas Macaria', 
+    'Enchiladas de diferentes guisos como huevo, frijol, papa, picadilo, ajonjolí y nopal. Ademas también vendo bocoles y tortillas de harina.', 
+    'Lunes a viernes', '9:00am - 5:00pm', 'Zonas cocurridas de Tancoltze y Plaza de Tancanhuitz', 
+    '489 177 2786 - Macaria Reyes Zavala', ['../Tancoltze/image/en3.png', '../Tancoltze/image/en2.png', '../Tancoltze/image/en1.png'],'https://images.unsplash.com/photo-1617196038435-3e4f3d3a4d3b')">
+        <img src="../Tancoltze/image/enchiladas.png">
+        <h3>Enchiladas "Macaria"</h3>
+    </div>
+
+    <div class="card comida" onclick="abrirModal('Tamales Doña Carmen', 
+    'Venta de tamales de pollo, puerco y picadillo', 
+    'Lunes a viernes', '9:00am - 5:00pm', 'Plaza de Tancanhuitz', 
+    'Carmen', ['../Tancoltze/image/tama0.png', '../Tancoltze/image/tama1.png', '../Tancoltze/image/tama2.png', '../Tancoltze/image/tama3.png', '../Tancoltze/image/tama4.png'],'https://images.unsplash.com/photo-1617196038435-3e4f3d3a4d3b')">
+        <img src="../Tancoltze/image/tamales.png">
+        <h3>Tamales "Doña Carmen"</h3>
+    </div>
+
+    <div class="card comida" onclick="abrirModal('Pollos Cruz', 
+    'Venta de pollos asados preparados de forma casera, cuidando el sabor y la calidad. Incluye salsa roja y verde, tortillas y cebolla, lo que brinda a los clientes una opción completa lista para consumir.', 
+    'Sabado y domingo', '12:00pm - hasta que se termine el producto', 'Plaza Tancanhuitz', 
+    '814 329 4052 - Victoría Cruz Hernández', ['../Tancoltze/image/pollo3.png', '../Tancoltze/image/pollo2.png', '../Tancoltze/image/pollo4.png', '../Tancoltze/image/pollo5.png', '../Tancoltze/image/pollo6.png', '../Tancoltze/image/pollo1.png'],'https://images.unsplash.com/photo-1617196038435-3e4f3d3a4d3b')">
+        <img src="../Tancoltze/image/pollo.png">
+        <h3>Pollos Cruz</h3>
+    </div>
+
+    <!-- POSTRES -->
+    <div class="card postres" onclick="abrirModal('Nieves Serapio', 
+    'Nieves artesanales de diferentes sabores, principalmente fresa, vainilla y coco. Elaboradas de manera tradicional, cuidando la calidad y el sabor para satisfacer a los clientes que buscan algo fresco y natural.', 
+    'Todos los dias', '10am - 6pm', 'Plaza principal de Tancanhuitz, aun costado del kiosco', 
+    '8130947443 - Serapio Hernández', ['../Tancoltze/image/nieves.png', '../Tancoltze/image/nieves2.png', '../Tancoltze/image/nieves3.png', '../Tancoltze/image/nieves4.png', '../Tancoltze/image/nieves5.png'], 
+    'https://images.unsplash.com/photo-1601972599720-36938d4ecd31')">
+        <img src="..//Tancoltze/image/nieve1.png">
+        <h3>Nieves "Serapio"</h3>
+    </div>
+
+    
+    <div class="card postres" onclick="abrirModal('Nieves Ian', 
+    'Nieves artesanales de diferentes sabores, principalmente fresa, melón, plátano y yaca. Elaboradas de manera tradicional, cuidando la calidad y el sabor.', 
+    'Sabados, domingos y días festivos', '10am - 6pm', 'Plaza principal de Tancanhuitz', 
+    '481 117 1895 - Ian Gibran Cruz Hernández', ['../Tancoltze/image/ian1.png', '../Tancoltze/image/ian2.png'], 
+    'https://images.unsplash.com/photo-1601972599720-36938d4ecd31')">
+        <img src="..//Tancoltze/image/nievesian.png">
+        <h3>Nieves "Ian"</h3>
+    </div>
+    
+
+    <!-- Ferreteria -->
+    <div class="card ferreteria" onclick="abrirModal('Novedades y Ferreteria Martínez', 
+    'Ofrecemos gran variedad de productos desde ferreteria, juguetes, productos de segunda mano, artículos de uso cotidiano, etc. Somos una opción accesible dentro de la comunidad', 
+    'Todos los días', '8:00am - 8:00pm', 'Ojox Tancoltze', 
+    '813 580 6479 - Marco Antonio Martínez Cruz', 
+    ['../Tancoltze/image/ferr.png','../Tancoltze/image/fer2.jpeg', '../Tancoltze/image/fer3.jpeg', '../Tancoltze/image/fer4.jpeg', '../Tancoltze/image/fer5.jpeg', '../Tancoltze/image/fer6.jpeg', '../Tancoltze/image/fer7.jpeg'], 'https://images.unsplash.com/photo-1551024709-8f23befc6b16')">
+        <img src="..//Tancoltze/image/fer1.png">
+        <h3>Novedades y Ferreteria "Martínez"</h3>
+    </div>
+
+
+    <!-- ARTESANÍAS -->
+    <div class="card artesanias" onclick="abrirModal('Bordados Cecilia', 
+    'Productos elaborados mediante bordado artesanal, como blusas, vestidos, almohadas, forros de cojines, monederos y bolsitas. Todos los articulos son hechos a mano sobre manta, lo que le da un valor especial por su detalle, dedicación y diseño único.', 
+    'Todos los días', '7:00am - 8:00pm', 'Calle Progreso #5, Tancoltze centro', '482 107 5987 - Cecilia Martínez Reyes', ['../Tancoltze/image/br3.jpeg', '../Tancoltze/image/br1.jpeg', '../Tancoltze/image/br2.jpeg', '../Tancoltze/image/br4.jpeg', '../Tancoltze/image/br5.jpeg', '../Tancoltze/image/br6.jpeg'],
+    'https://images.unsplash.com/photo-1585386959984-a4155224a1ad')">
+        <img src="../Tancoltze/image/bordados.jpg">
+        <h3>Bordados "Cecilia"</h3>
+    </div>
+
+    <div class="card artesanias" onclick="abrirModal('Productos Tejidos Macaria', 
+    'Productos tejidos de manera artesanal, entre los que destacan bolsos, monederos y mochilas. Son hechos a mano lo que implica un proceso detallado y personalizado, aportando valor por su originalidad', 
+    'Todos los días', '9:00am - 6:00pm', 'Centro de Tancoltze', 
+    '489 177 2786 - Macaria Reyes Zavala', ['../Tancoltze/image/tej1.png', '../Tancoltze/image/tej3.png', '../Tancoltze/image/tej2.png'], 'https://images.unsplash.com/photo-1603575448362-8bfe7d4f7c73')">
+        <img src="..//Tancoltze/image/tejidos.png">
+        <h3>Productos Tejidos "Macaria"</h3>
+    </div>
+
+    <div class="card artesanias" onclick="abrirModal('Bordados de Cruz', 
+    'Productos bordados de manera artesanal, entre los que destacan piezas decorativas, bolsos, manteles, porta celulares, servilleteros y monederos. Son hechos a mano lo que implica un proceso detallado, aportando valor cultural', 
+    'Todos los días', '9:00am - 6:00pm', 'Centro de Tancoltze', 
+    '482 102 4532 - Esperanza Hernández Santiago', ['../Tancoltze/image/cruz1.png', '../Tancoltze/image/cruz2.png'], 'https://images.unsplash.com/photo-1603575448362-8bfe7d4f7c73')">
+        <img src="..//Tancoltze/image/bordadocruz.png">
+        <h3>Bordados de Cruz</h3>
+    </div>
+
+    <div class="card artesanias" onclick="abrirModal('Bordados Gudelia', 
+    'Prendas artesanales bordadas a mano, como blusas, moños, diademas y bolsos, elaborados con la técnica de punto de cruz', 
+    'Todos los días', '9:00am - 6:00pm', 'Zona conocida como Punto de la Cruz', 
+    '481 139 1041 - Gudelia Reyes Pérez', ['../Tancoltze/image/bor1.png', '../Tancoltze/image/bor2.png'], 'https://images.unsplash.com/photo-1603575448362-8bfe7d4f7c73')">
+        <img src="..//Tancoltze/image/bor.png">
+        <h3>Bordados "Gudelia"</h3>
+    </div>
+
+    <!-- AGRICULTURA -->
+    <div class="card agricultura" onclick="abrirModal('Productos Agricolas Isabela', 
+    'Ofrecemos productos frescos como nopales, calabaza, yuca, plátanos, limones, piña, y flor de izote.', 
+    'Lunes a viernes', '7:00am - 3:00pm', 'Centro de Tancoltze', 
+    '813 074 6781 - Isabela López Hernández', ['../Tancoltze/image/agr1.png', '../Tancoltze/image/agr2.png', '../Tancoltze/image/agr3.png', '../Tancoltze/image/agr4.png', '../Tancoltze/image/agr5.png', '../Tancoltze/image/agr6.png'], 'https://images.unsplash.com/photo-1506806732259-39c2d0268443')">
+        <img src="..//Tancoltze/image/agricola.png">
+        <h3>Productos Agricolas "Isabela"</h3>
+    </div>
+
+    <div class="card agricultura" onclick="abrirModal('Productos Agricolas Cerapio', 
+    'Ofrecemos productos de nuestra cosecha como calabazas, maiz, pemoche y platano, ademas elaboramos y vendemos pilón', 
+    'Lunes a viernes', '7:00am - 3:00pm', 'Centro de Tancoltze', 
+    'Cerapio', ['../Tancoltze/image/cala1.png', '../Tancoltze/image/maiz.png', '../Tancoltze/image/platano.png', '../Tancoltze/image/pemu.png'], 'https://images.unsplash.com/photo-1506806732259-39c2d0268443')">
+        <img src="..//Tancoltze/image/agr.png">
+        <h3>Productos Agricolas "Cerapio"</h3>
+    </div>
+
+
+    <!-- ABARROTES -->
+    <div class="card abarrotes" onclick="abrirModal('Abarrotes del Centro', 'Ofrecemos una amplia variedad de productos y servicios como abarrotes, carnes, masa, tortilla, etc. Además Brindamos servicios como molino, internet, copias, impresiones y tramites como actualización de CURP.', 
+    'Todos los dias', '9:00am - 8:00pm', 'Calle Independencia s/n, Tancoltze centro', 
+    '481 110 2761 - Francisco Rodríguez Gordian', ['../Tancoltze/image/abarrotes.png', '../Tancoltze/image/aba2.jpeg', '../Tancoltze/image/aba3.jpeg', '../Tancoltze/image/aba4.jpeg', '../Tancoltze/image/aba5.jpeg', '../Tancoltze/image/aba6.jpeg', '../Tancoltze/image/aba7.jpeg'], 'https://images.unsplash.com/photo-1506806732259-39c2d0268443')">
+        <img src="..//Tancoltze/image/aba1.jpeg">
+        <h3>Abarrotes del Centro</h3>
+    </div>
+
+    <div class="card abarrotes" onclick="abrirModal('Abararrotes Gudelia', 
+    'Ofrecemos productos de la canasta basica para el consumo diario de las familias. Facilitamos el acceso a productos esenciales sin necesidad de transladarse a lugares más lejanos.', 
+    'Todos los dias', '9:00am - 6:00pm', 'Zona conocida como Punto de la Cruz', 
+    '481 139 1041 - Gudelia Reyes Pérez', ['../Tancoltze/image/tie1.png', '../Tancoltze/image/tie2.png', '../Tancoltze/image/tie3.png', '../Tancoltze/image/tie4.png'], 'https://images.unsplash.com/photo-1506806732259-39c2d0268443')">
+        <img src="..//Tancoltze/image/tienda.png">
+        <h3>Abarrotes "Gudelia"</h3>
+    </div>
+
+    <div class="card abarrotes" onclick="abrirModal('Tienda La Pasadita', 
+    'Ofrecemos productos de la canasta basica, productos de limpieza y sevicios como molino, recargas teléfonicas, renta de internet, retiros de efectivo y pagos.', 
+    'Todos los dias', '6:00am - 11:00pm', 'Ojox Tancoltze #31', 
+    '482 108 8358 - Sandra Santiago Martínez', ['../Tancoltze/image/tie1.png', '../Tancoltze/image/tie2.png', '../Tancoltze/image/tie3.png', '../Tancoltze/image/tie4.png'], 'https://images.unsplash.com/photo-1506806732259-39c2d0268443')">
+        <img src="..//Tancoltze/image/pasadita.png">
+        <h3>Tienda "La Pasadita"</h3>
+    </div>
+
+    <!-- SERVICIOS -->
+     <div class="card servicios" onclick="abrirModal('Peluqueria Polonio', 
+    'Servicio de cortes de cabello, adaptados al estilo y necesidades de cada cliente', 
+    'Lunes a sabado', '9:00am - 6:00pm', 'Centro de Tancoltze', 
+    ' - Polonio Cruz Hernández', ['../Tancoltze/image/bar1.png', '../Tancoltze/image/bar2.png'], 'https://images.unsplash.com/photo-1506806732259-39c2d0268443')">
+        <img src="..//Tancoltze/image/peluqueria.png">
+        <h3>Peluquería "Polonio"</h3>
+    </div>
+
+
+</div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <div class="galeria">
+        <button class="prev" onclick="cambiarImagenGrande(-1)">❮</button>
+        <img id="modal-img" onclick="abrirImagen(this.src)" style="cursor: pointer;">
+        <button class="next" onclick="cambiarImagenGrande(1)">❯</button>
+        </div>
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-desc"></p>
+        <p><strong>📅 Servicio:</strong> <span id="modal-servicio"></span></p>
+        <p><strong>🕛 Horario:</strong> <span id="modal-horario"></span></p>
+        <p><strong>📍 Ubicación:</strong> <span id="modal-ubicacion"></span></p>
+        <p><strong>📱 Contacto:</strong> <span id="modal-contacto"></span></p>
+
+<div class="modal-contacto">
+
+    <a href="#" class="icono whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="icono facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="#" class="icono instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+</div>
+</div>
+</div>
+
+
+<div id="modal-img-grande" class="modal-img-grande">
+    
+    <span class="cerrar-img" onclick="cerrarImagen()">&times;</span>
+
+    <button class="prev-img" onclick="cambiarImagenGrande(-1)">❮</button>
+
+    <img id="img-grande">
+
+    <button class="next-img" onclick="cambiarImagenGrande(1)">❯</button>
+
+</div>
+
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Tancoltze&output=embed"></iframe>
+    </div>
+
+    <div class="contact-buttons">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ejemplo@gmail.com&su=Información&body=Hola,%20quiero%20saber%20más:jozias2109@gmail.com" class="btn contacto-btn gmail">
+        <i class="fa-solid fa-envelope"></i> Gmail
+    </a>
+
+    <a href="https://wa.me/524821039626" class="btn contacto-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+</div>
+</section>
+
+<section id="creditos" class="creditos-final">
+
+    <h2 class="titulo-seccion">Créditos</h2>
+
+    <div class="creditos-grid">
+
+        <!-- UNIVERSIDAD -->
+        <div class="card-credito">
+            <img src="image/img.png" alt="Logo Universidad">
+            <h3>Universidad Intercultural de San Luis Potosí <br>Unidad Académica Tancanhuitz</h3>
+            <p></p>
+        </div>
+
+        <!-- EQUIPO -->
+        <div class="card-credito">
+            <h3>Desarrolladores <br> Informática Administrativa Semestre 8</h3>
+            <p>Josias Heladio Hernández Hernández</p>
+            <p>Oralia Martínez Ramos</p>
+            <p>Bianca Yulissa Cruz Hernández</p>
+            <p>Dulce María Cruz Hernández</p>
+        </div>
+
+        <!-- INFORMACIÓN -->
+        <div class="card-credito">
+            <h3>Proyecto</h3>
+            <p>Desarrollo de una página web para la promoción y fortalecimiento de pequeños emprendedores de Tancoltze Tancanhuitz</p>
+            <p>2026</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
